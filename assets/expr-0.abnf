@@ -1,1 +1,4 @@
 ; Simple expression.
+expression = term *(("+" / "-") term)
+term       = factor *(("*" / "/") factor)
+number     = DIGIT *(DIGIT)
